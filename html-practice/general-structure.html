@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer, aside, article {
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        header {
+            background-color: #f0f0f0;
+        }
+        footer {
+            background-color: #f0f0f0;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        aside {
+            flex: 1 1 200px;
+            background-color: #e0e0e0;
+        }
+        article {
+            flex: 2 1 400px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Header</h1>
+        <p>This is the header section of the website.</p>
+    </header>
+    
+    <main>
+        <aside>
+            <h2>Aside Section</h2>
+            <p>This is the aside section, typically used for side content or navigation links.</p>
+        </aside>
+        
+        <article>
+            <h2>Article 1</h2>
+            <p>This is the first article. It contains some example text to fill the space.</p>
+        </article>
+        
+        <article>
+            <h2>Article 2</h2>
+            <p>This is the second article. It also contains some example text to fill the space.</p>
+        </article>
+    </main>
+    
+    <footer>
+        <h2>Website Footer</h2>
+        <p>This is the footer section of the website.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+los sets son estrucutras similares a un array
+pero de datos unicos (no repetidos)
+
+- ya vimos un ejemplo con el metodo .filter() para eliminar elementos duplicados en un arreglo
+- esto tambien se puede hacer convirtiendo el arreglo a un tipo de dato sets
+
+- un set es como un arrelo mejorado de javascript que solo acepta valores unicos
+  hablando exclisivamente de valores PRIMITIVOS, porque si le pasas objetos
+  recuerda que cada objeto es una variable unica para javascript
+
+const set = new Set([1,2,3,4,5,true, false, {}, {},
+"hola", "HOLA"
+  // los [] indican que es una estructura de datos
+]) 
+
+console.log(set); // indica que es un elemento de 11 posiciones
+
+- al ser creado un set con valores repetidos solo tomara en cuenta la primer ocurrencia (creo)
+  y guardara solamente elementos diferentes
+
+- forEach() esta implementado para los arreglos y para los set, pero el operador structure[] no.
+
+- Array.from() permite convertir un tipo de dato "iterable" a un Array
+
+- ITERABLE: cualqueir tipo de dato que permita contar sus elementos
+- set es un tipo iterable.
+  - sin embargo no es un arreglo, no se puede hacer referencia a ellos como a uno.
+  - entonces convertimos el set a un array con el metodo .from() de Array:
+  Array.from(set[0])
+
+console.log( Array.from(set[0]));
+// esto vuelve un objeto en un iterable de tipo array y se comporta como uno

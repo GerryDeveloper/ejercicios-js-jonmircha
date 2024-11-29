@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header, footer, aside, article {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+}
+header, footer {
+  background-color: #f0f0f0;
+}
+header {
+  text-align: center;
+}
+aside {
+  background-color: #e0e0e0;
+  float: left;
+  width: 20%;
+}
+article {
+  background-color: #fff;
+  margin-left: 22%;
+}
+footer {
+  clear: both;
+  text-align: center;
+}
